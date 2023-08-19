@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="http://www.youtube.com/player_api"></script> -->
+  <title>Mek91-Remaster-AcidTrip</title>
+</head>
+
+<body>
+  <!-- <div id="player" style="position: absolute; top: -9999px; left: -9999px;"></div> -->
+  <audio style="display: none" id="music" controls>
+    <source src="https://cdn.discordapp.com/attachments/1084868011871183008/1142290941365981278/pablo.mp3" type="audio/mpeg">
+  </audio>
+  <script>
+    // var player;
+    // function DoMusic() {
+    //   if (player) {
+    //     player.playVideo();
+    //   } else {
+    //     player = new YT.Player('player', {
+    //         videoId: 'vja8kEIOmtg',
+    //         loop: true,
+    //         events: {
+    //             onReady: function (e) {
+    //                 e.target.playVideo();
+    //             }
+    //         }
+    //     });
+    //   }
+    // }
+
+    // $(function () {
+    //   window.addEventListener('message', function (event) {
+    //     if (event.data.type == "playMusic") {
+    //       // DoMusic();
+    //     } else if (event.data.type == "stopMusic") {
+    //       // player.pauseVideo();
+    //       // player.seekTo(1);
+    //     }
+    //   });
+    // });
+
+    const music = document.getElementById('music');
+
+    window.addEventListener('message', function (event) {
+      if (event.data.type === "playMusic") {
+        music.play();
+      } else if (event.data.type === "stopMusic") {
+        music.pause();
+        music.currentTime = 0;
+      }
+    });
+  </script>
+</body>
+
+</html>
