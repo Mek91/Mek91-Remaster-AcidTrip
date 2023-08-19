@@ -6,4 +6,4 @@ My purpose of doing this is that the old one was playing over the id of the vide
 https://github.com/meta-hub/fivem-acidtrip
 
 # Usage
-exports["acidtrip"]:DoAcid(120000) for a two minute trip.
+´´´exports["acidtrip"]:DoAcid(120000)´´´ for a two minute trip.
