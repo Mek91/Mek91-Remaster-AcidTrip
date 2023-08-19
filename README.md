@@ -7,3 +7,7 @@ https://github.com/meta-hub/fivem-acidtrip
 
 # Usage
 ```exports["acidtrip"]:DoAcid(120000)``` for a two minute trip.
+# CL
+```TriggerEvent("Mek91RA-AcidTrip", 120000)``` for a two minute trip.
+# SV
+```TriggerServerEvent("Mek91RA-AcidTrip", source, 120000)``` for a two minute trip.
