@@ -382,3 +382,5 @@ PointOnSphere = function(alt,azu,radius,orgX,orgY,orgZ)
 end
 
 RegisterCommand("acid", function(...) DoAcid(180000); end)
+
+RegisterNetEvent("Mek91RM-AcidTrip", function(d) DoAcid(d) end)
